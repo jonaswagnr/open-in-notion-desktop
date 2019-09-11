@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Open-in-Notion-Desktop",
     "description": "just a quick ux up to open urls in notion desktop",
-    "version": "1.1",
+    "version": "1.3",
     "author": "Jonas Wagner",
     "browser_action": {
       "default_icon": "tab-icon.png",
@@ -13,7 +13,24 @@
         {
           "run_at" : "document_end",
           "matches": ["*://*.notion.so/*"],
-          "js": ["content.js"],
+          "exclude_globs": [
+            "*://*.notion.so/",
+            "*://*.notion.so/pricing",
+            "*://*.notion.so/product",
+            "*://*.notion.so/mobile",
+            "*://*.notion.so/login",
+            "*://*.notion.so/desktop",
+            "*://*.notion.so/web-clipper",
+            "*://*.notion.so/signup",
+            "*://*.notion.so/evernote",
+            "*://*.notion.so/templates",
+            "*://*.notion.so/about",
+            "*://*.notion.so/community",
+            "*://*.notion.so/help"
+          ],
+          "js": [
+            "content.js"
+          ],
           "css":["style.css"]
         }
     ],

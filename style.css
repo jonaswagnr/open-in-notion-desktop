@@ -6,27 +6,28 @@
   display:flex;
   text-decoration: none;
 
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  right: 33px;
+  bottom: 10px;
+  z-index: 100;
+  max-width: 232.44px;
+
 
   border-radius: 3px;
   color: rgb(235, 87, 87);
   font-size: 14px;
-  background: rgba(235, 87, 87, 0.06);
+  background: #F8EFEF;
+  
   font-weight: 500;
   box-shadow: rgba(15, 15, 15, 0.1) 0px 1px 2px, rgba(235, 87, 87, 0.3) 0px 0px 0px 1px inset;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .opener:hover {
-    background: rgba(235, 87, 87, 0.12);
+    background: #F7E5E5;
     cursor: pointer;
-}
-
-.outer {
-    display: flex !important;
-    justify-content: center !important;
-    box-shadow: 0 10px 20px -15px rgba(0, 0, 0, 0.25);
-    margin-bottom: 20px;
-
 }
 
 .insidebtn {
@@ -34,4 +35,8 @@
     margin-right: 7px;
     margin-left:7px;
 }
+
+
+
+
 
